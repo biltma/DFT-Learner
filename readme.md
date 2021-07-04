@@ -5,6 +5,8 @@ A basic pytorch model that learns an N-point DFT matrix. Since the DFT is linear
 3. `pip install -r requirements.txt`
 4. `python main.py`
 
+To deactivate the environment, run `deactivate`.
+
 A few different parameters can be set using the command line. Run `python main.py -h` to see which parameters can be set.
 
 The model produces weights that are extremely similar to the real DFT matrix (MSE on the order of 1e-9). An example of an actual and learned 32 point DFT matrix is shown below.
