@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser(description="Learn N-point DFT matrix.")
 parser.add_argument("--N",  help="Length of DFT.", nargs="?", default=32, type=int)
 parser.add_argument("--lr",  help="Learning rate. Helps to increase as N increases.", nargs="?", default=0.01, type=int)
 parser.add_argument("--batch", help="Batch size. Increasing doesn't seem to change much, but feel free to play around wiht it.", nargs="?", default=1, type=int)
-parser.add_argument("--verbose", action="store_true")
+parser.add_argument("--verbose", help="Print loss ever 2500 iterations.", action="store_true")
 args = parser.parse_args()
 
 SIG_LENGTH = args.N
